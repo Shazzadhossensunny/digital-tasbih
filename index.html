@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Tasbih</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .font-poppins {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="font-poppins p-5 lg:p-24">
+    <header class="text-center">
+      <h1
+        class="text-7xl font-bold bg-gradient-to-r from-cyan-500 to-blue-500 text-transparent bg-clip-text inline-block py-6"
+      >
+        Digital Tasbih
+      </h1>
+    </header>
+
+    <main>
+      <!--grid container -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12">
+        <div class="shadow-xl rounded-lg p-10 text-center space-y-8">
+          <h2 class="text-3xl font-semibold">Subhan Allah</h2>
+
+          <h3 id="show-text" class="text-5xl">0</h3>
+          <p id="update-text"></p>
+          <div class="space-x-3">
+            <button
+              id="subhanallah-increment-btn"
+              class="text-lg font-semibold py-2 px-8 bg-green-600 text-white rounded-lg"
+            >
+              Increment
+            </button>
+            <button
+              id="subhanallah-decrement-btn"
+              class="text-lg font-semibold py-2 px-8 bg-red-600 text-white rounded-lg"
+            >
+              Decrement
+            </button>
+          </div>
+        </div>
+        <div class="shadow-xl rounded-lg p-10 text-center space-y-8">
+          <h2 class="text-3xl font-semibold">Alhumdulillah</h2>
+          <h3 id="show-text2" class="text-5xl">0</h3>
+          <p id="update-text2"></p>
+          <div class="space-x-3">
+            <button
+              id="alhumdulliah-increment-btn"
+              class="text-lg font-semibold py-2 px-8 bg-green-600 text-white rounded-lg"
+            >
+              Increment
+            </button>
+            <button
+              id="alhumdulliah-decrement-btn"
+              class="text-lg font-semibold py-2 px-8 bg-red-600 text-white rounded-lg"
+            >
+              Decrement
+            </button>
+          </div>
+        </div>
+        <div class="shadow-xl rounded-lg p-10 text-center space-y-8">
+          <h2 class="text-3xl font-semibold">Allahuakber</h2>
+          <h3 id="show-text3" class="text-5xl">0</h3>
+          <p id="update-text3"></p>
+          <div class="space-x-3">
+            <button
+              id="allahuakbar-increment-btn"
+              class="text-lg font-semibold py-2 px-8 bg-green-600 text-white rounded-lg"
+            >
+              Increment
+            </button>
+            <button
+              id="allahuakbar-decrement-btn"
+              class="text-lg font-semibold py-2 px-8 bg-red-600 text-white rounded-lg"
+            >
+              Decrement
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- reset button -->
+      <div class="text-center mt-10">
+        <button
+          id="reset-btn"
+          class="text-lg font-semibold py-2 px-8 bg-yellow-500 text-white rounded-lg"
+        >
+          Reset All Tasbih
+        </button>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
